@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Week 12</title>
+  <style>
+    body {
+      font-family: Arial;
+      padding: 20px;
+      line-height: 1.6;
+    }
+    section {
+      border: 1px solid #ccc;
+      padding: 15px;
+      margin-bottom: 25px;
+      border-radius: 8px;
+    }
+    ul li { margin-bottom: 6px; }
+    .warning { color: red; }
+    body.light { background: white; color: black; }
+    body.dark { background: #222; color: white; }
+    .error { color: red; font-size: 14px; }
+  </style>
+</head>
+<body class="light">
+
+  <h1>Week 12 — DOM Practice (All-in-One)</h1>
+
+  <!-- 1. Todo List -->
+  <section>
+    <h2>1. Todo List</h2>
+    <input id="todoInput" type="text" placeholder="Enter task..." />
+    <button id="addBtn">Add</button>
+    <ul id="todoList"></ul>
+  </section>
+
+  <!-- 2. Live Search -->
+  <section>
+    <h2>2. Live Search Filter</h2>
+    <input id="searchBox" type="text" placeholder="Search name..." />
+    <ul id="nameList">
+      <li>Panita</li>
+      <li>Somsak</li>
+      <li>Anya</li>
+      <li>Tony</li>
+      <li>Jungkook</li>
+    </ul>
+  </section>
+
+  <!-- 3. Character Counter -->
+  <section>
+    <h2>3. Character Counter</h2>
+    <textarea id="textBox" rows="5" cols="40"></textarea>
+    <p>Characters: <span id="count">0</span>/50</p>
+  </section>
+
+  <!-- 4. Theme Switcher -->
+  <section>
+    <h2>4. Theme Switcher</h2>
+    <button id="toggleBtn">Toggle Dark/Light</button>
+  </section>
+
+  <!-- 5. Form Validation -->
+  <section>
+    <h2>5. Form Validation</h2>
+    <form id="registerForm">
+      <input id="username" type="text" placeholder="Username"><br><br>
+      <input id="age" type="number" placeholder="Age"><br><br>
+      <p id="msg" class="error"></p>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
