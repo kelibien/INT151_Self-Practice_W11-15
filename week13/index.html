@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Week 13</title>
+  <style>
+    body { font-family: Arial; padding: 20px; }
+    section { border: 1px solid #ccc; padding: 10px; margin-bottom: 25px; }
+    ul li { margin: 5px 0; cursor: pointer; }
+    #colorBox { width: 100px; height: 100px; background: gray; }
+  </style>
+</head>
+<body>
+
+  <h1>Week 13 — Events Practice</h1>
+
+  <!-- 1. Click Event -->
+  <section>
+    <h2>1. Click Event</h2>
+    <button id="clickMe">Click Me</button>
+    <p id="clickResult"></p>
+  </section>
+
+  <!-- 2. Input Event -->
+  <section>
+    <h2>2. Input Event</h2>
+    <input id="liveInput" type="text" placeholder="Type something..." />
+    <p>Live text: <span id="liveOutput"></span></p>
+  </section>
+
+  <!-- 3. Keyboard Events -->
+  <section>
+    <h2>3. Keyboard Events</h2>
+    <input id="keyBox" type="text" placeholder="Press any key" />
+    <p id="keyInfo"></p>
+  </section>
+
+  <!-- 4. Change Event -->
+  <section>
+    <h2>4. Change Event (Select Dropdown)</h2>
+    <select id="colorSelect">
+      <option value="">-- Select Color --</option>
+      <option value="red">Red</option>
+      <option value="blue">Blue</option>
+      <option value="green">Green</option>
+    </select>
+    <div id="colorBox"></div>
+  </section>
+
+  <!-- 5. Submit Event -->
+  <section>
+    <h2>5. Submit Event</h2>
+    <form id="myForm">
+      <input id="formName" type="text" placeholder="Your name" />
+      <button type="submit">Submit</button>
+    </form>
+    <p id="formMsg"></p>
+  </section>
+
+  <!-- 6. Event Bubbling / Capturing -->
+  <section>
+    <h2>6. Bubbling vs Capturing</h2>
+    <div id="outer" style="padding:20px;border:1px solid black;">
+      OUTER
+      <div id="inner" style="padding:20px;border:1px solid blue;">
+        INNER
+      </div>
+    </div>
+    <p id="bubbleInfo"></p>
+  </section>
+
+  <!-- 7. Event Delegation -->
+  <section>
+    <h2>7. Event Delegation (Click item in list)</h2>
+    <ul id="itemList">
+      <li data-id="1">Item 1</li>
+      <li data-id="2">Item 2</li>
+      <li data-id="3">Item 3</li>
+      <li data-id="4">Item 4</li>
+    </ul>
+    <p id="itemInfo"></p>
+  </section>
+
+<script src="script.js"></script>
+</body>
+</html>
