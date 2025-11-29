@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Week 14</title>
+  <style>
+    body { font-family: Arial; padding: 20px; }
+    section { border: 1px solid #ccc; padding: 15px; margin-top: 20px; }
+  </style>
+</head>
+<body>
+
+  <h1>Week 14 — Fetch API Practice</h1>
+
+  <!-- 1: Load Users -->
+  <section>
+    <h2>1. Load Users (GET)</h2>
+    <button id="loadBtn">Load Users</button>
+    <p id="loading"></p>
+    <ul id="userList"></ul>
+  </section>
+
+  <!-- 2: Filter Users -->
+  <section>
+    <h2>2. Search Users</h2>
+    <input id="searchBox" type="text" placeholder="Search by name">
+    <ul id="searchResult"></ul>
+  </section>
+
+  <!-- 3: Add New User -->
+  <section>
+    <h2>3. Add User (POST)</h2>
+    <input id="newName" type="text" placeholder="Name">
+    <input id="newEmail" type="text" placeholder="Email">
+    <button id="addUserBtn">Add User</button>
+    <p id="addMsg"></p>
+  </section>
+
+  <!-- 4: Error Testing -->
+  <section>
+    <h2>4. API Error Test</h2>
+    <button id="errorBtn">Call broken API</button>
+    <p id="errMsg"></p>
+  </section>
+
+<script src="script.js"></script>
+</body>
+</html>
